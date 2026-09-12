@@ -10,16 +10,6 @@ if nome == "Vitinho":
 else:
     print("Olá, visitante!")
 
-if idade >= 18:
-    print("Você é maior de idade.")
-else:
-    print("Você é menor de idade.")
-
-if altura >= 1.80:
-    print("Você é alto")
-else:
-    print("Você não é alto")
-
 #str significa string
 print(
     f"{nome} tem {idade} anos, "
