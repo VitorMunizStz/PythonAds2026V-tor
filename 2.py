@@ -17,3 +17,5 @@ print(
     f"mede {altura}m ({'é alto' if altura >= 1.70 else 'não é alto'}), e "
     f"{'está aprovado' if aprovado else 'não está aprovado'}"
 )
+
+print(f"Hello World")
