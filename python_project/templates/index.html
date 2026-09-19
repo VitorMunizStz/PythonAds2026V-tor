@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ Título que eu quiser }}</title>
+    <title>{{ titulo }}</title>
     <!-- url_for vincula a pasta static automaticamente -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <main class="cards">
-    <h1> {{ Título que eu quiser }} </h1>
-    <p><strong>Aluno: </strong> {{ usuario.nome }} </p>
-    <p><strong>Curso: </strong> {{ usuario.curso }} </p>
-    <p><strong>Nota final: </strong> {{ usuario.nota_final }} </p>
+    <h1>{{ titulo }}</h1>
+    <p><strong>Aluno: </strong> {{ usuario.nome }}</p>
+    <p><strong>Curso: </strong> {{ usuario.curso }}</p>
+    <p><strong>Nota final: </strong> {{ usuario.nota }}</p>
 
-    <div class="tag {{ 'aprovado' if resultado == 'aprovado' else 'reprovado' }}">
+    <div class="tag {{ 'Aprovado' if resultado == 'Aprovado' else 'Reprovado' }}">
         Status: {{ resultado }}
     </div>
 

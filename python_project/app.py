@@ -2,19 +2,19 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-app.route("/")
+@app.route("/")
 def home():
     #dados que serão calculados pelo Python
-    titulo_pagina = "Dashboard de Demonstração"
-    aluno = {"nome": "Vitinho", "curso": "Analista de Sistemas", "nota": "9.5"}
-    status = "Aprovado" if aluno["nota"] >= 7 else "Reprovado"
+    Titulo_pagina = "Dashboard de Demonstração"
+    Aluno = {"nome": "Vitinho", "curso": "Analista de Sistemas", "nota": "9.5"}
+    Status = "Aprovado" if Aluno["nota"] >= 7 else "Reprovado"
 
     return render_template(
     "index.html",
-    titulo=titulo_pagina,
-    aluno=aluno,
-    usuario=aluno,
-    resultado=status
+    titulo=Titulo_pagina,
+    aluno=Aluno,
+    usuario=Aluno,
+    resultado=Status
     )
 
 if __name__ == "__main__":
